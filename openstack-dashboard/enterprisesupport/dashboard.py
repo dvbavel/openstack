@@ -12,7 +12,7 @@ class Enterprisesupport(horizon.Dashboard):
     name = _("Support Center")
     slug = "enterprisesupport"
     panels = (enterprisesupportgroup,)  # Add your panels here.
-    default_panel = 'supportoverview'  # Specify the slug of the dashboard's default panel.
+    default_panel = 'supportlinks'  # Specify the slug of the dashboard's default panel.
 
 
 horizon.register(Enterprisesupport)
