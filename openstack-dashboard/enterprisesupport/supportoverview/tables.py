@@ -10,8 +10,9 @@ class MyFilterAction(tables.FilterAction):
     name = "myfilter"
 
 class InstancesTable(tables.DataTable):
-    created = tables.Column("created", verbose_name=_("Created"))
     name = tables.Column("name", verbose_name=_("Name"))
+    created = tables.Column("created", verbose_name=_("Created at"))
+    createdby = tables.Clumn("user_id", verbose_name=_("Created by"))
     status = tables.Column("status", verbose_name=_("Status"))
     host = tables.Column("OS-EXT-SRV-ATTR:host", verbose_name=_("Host"))
     zone = tables.Column('availability_zone',
