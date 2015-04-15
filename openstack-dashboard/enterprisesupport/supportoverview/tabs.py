@@ -4,7 +4,6 @@ from horizon import exceptions
 from horizon import tabs
 
 from openstack_dashboard import api
-from openstack_dashboard.api import nova
 from openstack_dashboard.dashboards.enterprisesupport.supportoverview import tables
 
 

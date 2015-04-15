@@ -1,6 +1,10 @@
 from django.utils.translation import ugettext_lazy as _
+from django.template import defaultfilters as filters
 
 from horizon import tables
+from horizon.utils import filters as utils_filters
+
+from openstack_dashboard import api
 
 class MyFilterAction(tables.FilterAction):
     name = "myfilter"
