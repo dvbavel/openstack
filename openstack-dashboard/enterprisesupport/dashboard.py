@@ -4,7 +4,7 @@ import horizon
 
 
 class Enterprisesupport(horizon.Dashboard):
-    name = _("Enterprisesupport")
+    name = _("Support Center")
     slug = "enterprisesupport"
     panels = ()  # Add your panels here.
     default_panel = ''  # Specify the slug of the dashboard's default panel.
