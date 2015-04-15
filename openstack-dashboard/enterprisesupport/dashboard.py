@@ -6,7 +6,7 @@ import horizon
 class enterprisesupportgroup(horizon.PanelGroup):
     slug = "enterprisesupportgroup"
     name = _("Support")
-    panels = ('supportoverview',)
+    panels = ('supportoverview','supportlinks',)
 
 class Enterprisesupport(horizon.Dashboard):
     name = _("Support Center")
