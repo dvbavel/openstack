@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% load i18n %}
+{% block title %}{% trans "Supportlinks" %}{% endblock %}
+
+{% block page_header %}
+  {% include "horizon/common/_page_header.html" with title=_("Supportlinks") %}
+{% endblock page_header %}
+
+{% block main %}
+<ul style="list-style-type:disc; margin-left:20px">
+    <li>
+        <a href="http://docs.openstack.org" target="_blank">OpenStack Documentation</a>
+    </li>
+    <li>
+        <a href="{% static "help/supplement/" %}">Supplement to Admin User Guide and End User Guide</a>
+        (<a href="{% static "help/susecloud-supplement_en.pdf" %}">PDF</a>)
+    </li>
+</ul>
+</p>
+{% endblock %}
+
+
