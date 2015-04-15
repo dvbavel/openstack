@@ -8,6 +8,7 @@ class MyFilterAction(tables.FilterAction):
 class InstancesTable(tables.DataTable):
     name = tables.Column("name", verbose_name=_("Name"))
     status = tables.Column("status", verbose_name=_("Status"))
+    host = tables.Column("host", verbose_name=_("Host"))
     zone = tables.Column('availability_zone',
                           verbose_name=_("Availability Zone"))
     image_name = tables.Column('image_name', verbose_name=_("Image Name"))
